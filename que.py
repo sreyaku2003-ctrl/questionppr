@@ -11,6 +11,7 @@ load_dotenv()
 
 # Get API key from environment variable (more secure for Render)
 GROQ_API_KEY = os.getenv('GROQ_API_KEY')
+client = Groq(api_key=GROQ_API_KEY)
 
 def extract_text_from_pdf(pdf_file):
     """Extract text from uploaded PDF file using multiple methods"""
@@ -459,4 +460,5 @@ def main():
             )
 
 if __name__ == "__main__":
+
     main()

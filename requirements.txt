@@ -1,4 +1,5 @@
 streamlit
+gunicorn==21.2.0
 groq
 python-dotenv
 PyPDF2
